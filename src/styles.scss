@@ -5,6 +5,28 @@
 html, body {
   height: 100%;
   width: 100%;
+  color: white;
  }
 
- 
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("assets/nomad-bg-min.png");
+
+  /* Full height */
+  height: 100%;
+
+  background-attachment: scroll;
+  background-position: -5px -500px;
+  background-repeat: no-repeat;
+  background-size: 100% 102%;
+  background-clip: padding-box;
+
+  background-origin: content-box;
+}
